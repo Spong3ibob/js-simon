@@ -6,11 +6,15 @@ while(numberRandom.length <= 5){
     
     if(numberRandom.includes(randInt) === false){
         numberRandom.push(randInt);
-        const number = document.createElement("div");
-        number.append(numberRandom)
-        container.append(number)
     }
     i++;
 }
-console.log(numberRandom);
 
+setTimeout(timeNumber, 3000)
+function timeNumber(){
+    const number = document.createElement("div");
+    number.append(numberRandom)
+    container.append(number)
+}
+
+console.log(numberRandom);
